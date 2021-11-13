@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <title>personal website</title>
+    <link href="C:\Users\brayan opiyo\Desktop\DR\styles.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+crossorigin="anonymous">
+</head>
+<body>
+    <section class =" sub-header">
+        <nav>
+            <a href = "index.html"><img src = "images/logo.png"></a>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li> <a href = "index.html" ">HOME</a></li>
+                    <li> <a href = "about.html">ABOUT</a></li>
+                    <li> <a href = "units.html">UNITS</a></li>
+                    <li> <a href = "blog.html">BLOG</a></li>
+                    <li> <a href = "contact.html">CONTACT</a></li>
+                 </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>contact me</h1>
+
+
+    </div>
+
+    </section>
+<!-----------------contact me----------------->
+<section class = "location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.00068652227!2d36.70124937877911!3d-1.364142986955629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f04e2529bcab3%3A0xb85155f9a25aa4c0!2sLangata%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1636223234513!5m2!1sen!2ske"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section class="contact-me">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class = "fa fa-home"></i>
+                <span>
+                    <h5> Langata road, bomas building</h5>
+                    <p>Raila estate,  near southern bypass underpass</p>
+                </span>
+            </div>
+            <div>
+                <i class = "fa fa-phone"></i>
+                <span>
+                    <h5> +254795716035</h5>
+                    <p>call Monday-Surtaday 8am-8pm</p>
+                </span>
+            </div>
+            <div>
+                <i class = "fa fa-envelope-o"></i>
+                <span>
+                    <h5> brayanopiyo18@gmail.com</h5>
+                    <p>feel free to email </p>
+                </span>
+            </div>
+            
+        </div>
+        <div class="contact-col">
+            <form action ="form-handler.php" method="post">
+                <input type="text" name = "name" placeholder="Enter Your Name" required>
+                <input type="email" name = "email"  placeholder="Enter Your email address" required>
+                <input type="text" name = "subject"  placeholder="Enter Your subject" required>
+                <textarea rows = "8"name = "message"  placeholder="Message" requared></textarea>
+                <button type="submit" class="hero-btn red-btn"> send message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!------------------footer------->
+<section class = "footer">
+    <h4> about me</h4>
+    <p> Ia am Ben Obiero  a lecturer at techical
+        university of kenya. <br>In TUK,  I take part in pure mathematics 
+        related units, where I also head the team of lectures.
+    </p>
+    <div class="icons">
+        <i class = "fa fa-facebook"></i>
+        <i class = "fa fa-twitter"></i>
+        <i class = "fa fa-instagram"></i>
+        <i class = "fa fa-linkedin"></i>
+    </div>
+    <p> Made with  <i class = "fa fa-heart-o"></i> by   brayan opiyo</p>
+</section>
+
+<!----------------javascript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>  
+</body>
+</html>
