@@ -1,88 +1,128 @@
 <!DOCTYPE html>
-<html>   
-<head>
-    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
-    <title>personal website</title>
-    <link href="C:\Users\brayan opiyo\Desktop\DR\styles.css" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-crossorigin="anonymous">
-</head>
-<body>
-    <section class =" sub-header">
-        <nav>
-            <a href = "index.html"><img src = "images/logo.png"></a>
-            <div class = "nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+<html>
+    <head>
+        <meta name="viewport" content ='width=device-width, initial-scale=1.0'>
+        <title> Student Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                <ul>
-                    <li> <a href = "index.html" ">HOME</a></li>
-                    <li> <a href = "about.html">ABOUT</a></li>
-                    <li> <a href = "units.html">UNITS</a></li>
-                    <li> <a href = "blog.html">BLOG</a></li>
-                    <li> <a href = "contact.html">CONTACT</a></li>
-                 </ul>
+    </head>
+    <body>
+        <section class="header-about">
+            <nav>
+                <a href="index.html"><img src='tuk logo.jpg'></a>
+                <div class="nav-links" id ='navLinks'>
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href='index.html'>HOME</a></li>
+                        <li><a href='about.html'>ABOUT</a></li>
+                        <li><a href='project.html'>PROJECTS</a></li>
+                        <li><a href='contact.html'>CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            
+
+        </section>
+
+        <!-- about page -->
+        <section  class="about">
+            <h1>Mathematics and Data</h1>
+            <p> 
+                Combining maths and Data is very intresting.
+                <br>
+                <br>
+                In this section, I will introduce you to what I believe in, my relationship with maths 
+                and data, and ofcourse about myself
+
+                <br>
+                <br>
+
+                Aspiring Techprenuer<i class="fa fa-emoji"></i>
+    
+            </p>
+
+            <div class="row">
+                <div class="about-col">
+                    <h3>why Mathematics?</h3>
+                    <img src="math1.jpeg">
+                    <p>
+                        I am Young ambitiuos Kenyan Lady, A Tech Enthiast currently a student in Kenya 
+                        at Technical University of Kenya, taking a Bachelor of Science in Mathematics
+                    </p>
+                </div>
+
+                <div class="about-col">
+                    <h3>why Explore</h3>
+                    <img src="math2.jpg">
+                    <p>
+                        Have worked with other code Tech sites like Freecode camp, HackkerRank, Andela  Lerning Community<br>
+                (GAD's), Stack Overflow.
+                    </p>
+                </div>
+
+                <div class="about-col">
+                    <h3>Is Tech world speeding</h3>
+                    <img src="math3.jpg">
+                    <p>
+                        I think the Tech world is so vast, right now I take a taste of almost everything before <br>
+                I settle on a particular niche.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- project page -->
+       
+
+        <!-- footer -->
+        <section class="footer">
+            <h3> contact me</h3>
+            <p>Please use the media provided below to reach me.</p>
+            <div class="icons">
+                <a href=""> 
+                <i class="fa fa-facebook"></i>
+               </a>
+               <a href="">
+                <i class="fa fa-twitter"></i>
+               </a>
+               <a href="">
+                <i class="fa fa-linkedin"></i>
+               </a>
+               <a href="">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="mailto:brayanopiyo@students.tukenya.ac.ke">
+                <img src = "email.gif" alta = "staff portal" width ="30"
+                height ="30" border ="0" align="absbottom">
+              </a>
+              <a href="">
+                <i class="fa fa-phone"></i>
+                +254797743100
+             </a>
 
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
 
-        </nav>
-        <h1>About me</h1>
+        </section>
+        <!-- Java script for toggle menu -->
+        <script>
+            var navLinks=document.getElementById('navLinks');
 
+            function hidemenu(){
+                navLinks.style.right='-200px';
+            
+            }
+            function showmenu(){
+                navLinks.style.right='0';
+            }
 
-    </div>
-
-    </section>
-<!-----------------about me content----------------->
-<section class = "about-me">
-    <div class="row">
-        <div class="about-col">
-            <h1> Hello everyone</h1>
-            <p> I am Brayan opiyo student at techinal university of kenya. Currently am taking 
-                bachelor of science in mathematics w ich constitutes to a tottal of 56 units  and 
-                every student has to finish all this in order to qualify for the graduation. the units are divided 
-                into three categories that is , pure mathematics related units, applied mathematics and 
-                 statistical mathematics.
-            </p>
-            <a href="" class = "hero-btn red-btn">Explore now</a>
-        </div>
-        <div class="about-col">
-            <img src="images/calculus.png">
-
-        </div>
-    </div>
-</section>
-
-
-
-<!------------------footer------->
-<section class = "footer">
-    <h4> about me</h4>
-    <p> Ia am Ben Obiero  a lecturer at techical
-        university of kenya. <br>In TUK,  I take part in pure mathematics 
-        related units, where I also head the team of lectures.
-    </p>
-    <div class="icons">
-        <i class = "fa fa-facebook"></i>
-        <i class = "fa fa-twitter"></i>
-        <i class = "fa fa-instagram"></i>
-        <i class = "fa fa-linkedin"></i>
-    </div>
-    <p> Made with  <i class = "fa fa-heart-o"></i> by   brayan opiyo</p>
-</section>
-
-<!----------------javascript for toggle menu-->
-<script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0"
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px"
-    }
-</script>  
-</body>
+        </script>
+    </body>
 </html>
+
