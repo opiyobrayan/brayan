@@ -1,0 +1,32 @@
+{% extends 'events/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<table class="table table-striped table-hover
+ table-bordered" >
+
+<h1> Venues...</h1>
+    <br>
+
+    {% for venue in venue_list %}
+      <tr>
+          <td>
+      <a href=" {% url 'show-venue' venue.id %}">
+          {{ venue }} </a> <br>
+          </td>
+          <td align="right">
+             <a href=" {% url 'update-venue' venue.id %}"
+             class=" btn btn-outline-secondary btn-sm">
+                 update</a>
+          </td>
+      </tr>
+    {%  endfor %}
+</table>
+{% endblock %}
+
+</html>
